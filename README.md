@@ -3,4 +3,4 @@ first repository
 
 Hello,
 
-Soriano here, I'm a computer science student and new to github.
+Soriano here, I'm a computer engineering undergrad student and new to github.
