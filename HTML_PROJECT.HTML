@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+ 
+  <title>Progressive Web App Documentation</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+  <header id="top">Progressive Web App Documentation</header>
+  
+  
+      <style>
+      html,body{
+  min-width:290px;
+    color: grey;
+    background-color: white;
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1.5;
+}
+        #top{
+              padding: 8px;
+              margin: 0;
+              text-align: center;
+              color: white;
+            font-family: 'Source Sans Pro', sans-serif;
+              font-size: 2.0em;
+              background-color: black;
+          }
+#navagation-bar{
+  position:fixed;
+    padding-top: 55px;
+  min-width:290px;
+  top:0px;
+  left:0px;
+  width:300px;
+  height:100%;
+  border-right:solid;
+  border-color: gray
+}
+header{
+  color:black;
+  font-size: 30px;
+  margin:10px;
+  text-align:center;
+  font-size:1.8em;
+  font-weight:thin;
+}
+#main-doc header{
+  text-align:left;
+  margin:0px;
+}
+#navagation-bar ul{
+  height:88%;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+#navagation-bar li{
+  color: blue;
+border-color: lightgray;
+  border:1px solid;
+  border-bottom-width:0px;
+  padding:8px;
+  padding-left:45px;
+  list-style: none;
+  position:relative;
+ left:-50px;
+  width:100%;
+  
+}
+#navagation-bar a{
+  color: grey;
+    text-decoration:none;
+    cursor:pointer;
+} 
+#main-doc{
+  position: absolute;
+  margin-left:310px;
+  padding:20px;
+  margin-bottom:110px;
+}
+section article{
+  color: grey;
+  margin:15px;
+  font-size:0.96em;
+}
+section li {
+  margin:15px 0px 0px 20px;
+}
+xmp{
+  display:block;
+    color: black;
+    text-align: left;
+  white-space: pre;
+  position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color:white;
+  padding:15px;
+  margin:10px;
+    border-radius:5px;
+}
+@media only screen and (max-width: 815px) {
+    /* For Minimize: */
+  #top{
+              
+      padding: 8px;
+              margin: 0;
+              text-align: center;
+              color: white;
+              font-size: 2.0em;
+              background-color: black;
+          }
+    #navagation-bar ul{
+  border:1px solid;
+    height:207px;
+  }
+    #navagation-bar{
+      background-color: whitesmoke;
+      position:absolute;
+      top:5px;
+      padding:0;
+      margin: 0;
+      width:100%;
+      max-height:275px;
+      border:none;
+      z-index:1;
+      border-bottom:2px solid;
+    }
+  #main-doc{
+    position: relative;
+    margin-left:0px;
+    margin-top:270px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #main-doc{
+    margin-left:-10px;
+  }
+  xmp{
+    margin-left:-20px;
+    width:100%;
+    padding:15px;
+    padding-left:10px;
+    padding-right:45px;
+    min-width:233px;
+  }
+}
+    </style>
+
+</head>
+<body>
+   <header></header> 
+<nav id="navagation-bar">
+  
+  <ul> 
+    <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+    <a class="nav-link" href="#Skills you should have before implementing" rel="internal"><li>Skills you should have before implementing</li></a>
+    <a class="nav-link" href="#Tools and items needed to implement" rel="internal"><li>Tools and items needed to implement</li></a>
+    <a class="nav-link" href="#The Pro's and Con's" rel="internal"><li>The Pro's and Con's</li></a>
+    <a class="nav-link" href="#Web Sources" rel="internal"><li>Web Sources</li></a>
+    <a class="nav-link" href="#Implementation" rel="internal"><li>Implementation</li></a>
+    <a class="nav-link" href="#Useful tips" rel="internal"><li>Useful tips</li></a>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>  
+        <p>Coined by Alex Russell and Frances Berriman Progressive Web Apps are not a new framework or technology. It's a practice which looks to make a web application function similar to a native desktop or mobile application. The goal is to create an experience so that the user is unable to tell the difference between a Progressive Web App and a native desktop or mobile app.</p>
+
+        <p>Progressive web applications or PWA, work by using progressive enhancement. Which means that a PWA will perform the same functions on a new desktop or mobile device as it would on an older version.</p>
+        
+        <p>PWAs feel and behave like native apps. They sit in a user’s home screen, send push notifications like native apps, and have access to a device’s functionalities like native apps this provides an experience that is consistently fast. Because user's can cache the data from the moment they start interacting with PWA's, everything happens really fast, even without hitting the network. This is done with the help of service workers. It can help paint a picture on a user’s.</p>
+
+      </article>
+    </section>
+    
+  <section class="main-section" id="Skills you should have before implementing">
+    <header>Skills you should have before implementing</header>
+    <article>
+        <p>TThe tools to require so as to implement or build PWAs are provided by Google. Using, Google's guide to building your first progressive web app. There you will find a checklist of items for progressive web apps. This checklist takes into account that the developer has knowledge of JavaScript, CSS, HTML and JSON files. The following is the checklist.</p>
+        
+        <li>Site is served over HTTPS.</li>
+        <li>Pages are responsive on tablets and mobile devices.</li>
+        <li>All app URLs load while offline.</li>
+        <li>Metadata provided for add to Home screen</li>
+        <li>First load fast even on 3G.</li>
+        <li>Site works across browsers.</li>
+        <li>Page transitions don't feel like they block on the network.</li>
+        <li>Each page has a URL.</li>
+      </article>
+    </section>
+    
+  <section class="main-section" id="Tools and items needed to implement">
+    <header>Tools and items needed to implement</header>
+    <article>
+        <p>There are 4 main items required to develop a PWA. The first is a Web App Manifest, this is a file that gives you information such as, the icon of the app, background color of the app, name of the app, short name, and so on. We can write this manifest file ourselves or we can use tools to generate one for us.</p>
+
+        <p>Next you'll need Service Workers. These are event-driven workers which are JavaScript files that run in the background of the application, separately from the main browser thread. They intercept network request, caching or retrieving resources from the cache, and delivering push messages. They can be used to load data for offline use.</p>
+
+        <p>The third item required is an Icon. The manifest tool stated above assist in generating icons. However, if a you are looking to create your own Icon any jpeg image will work.</p>
+        
+        <p>The final Item required is for the web application to work over a secure network, HTTPS.  This is required for all PWAs, it helps in preventing middle man attacks. It also establishes the application as a trusted and reliable site. Securing a site is a good practice and services like Cloudfare and LetsEncrypt, make it easy to get the required SSL certificate.</p>
+    </article>
+    </section>
+    
+  <section class="main-section" id="The Pro's and Con's">
+    <header>The Pro's and Con's</header>
+    <article> 
+        <p>Progressive Web Apps appear to be perfect with their functionality and speed, however as with any technology there exist positives and flaws.</p>
+        
+        <p>THE PRO'S:</p>
+        <li>PWAs are a combination of native and web apps, they have the feature of being accessible online, just like native apps.</li>
+        <li>It can be used when there is limited or no connectivity. This is because the data is cached upon its last interaction with the internet thus, PWAs are still accessible.</li>
+        <li>Due to the technology used to build PWAs, such as, app shell, web manifest, and service workers. PWAs maintain the speed of a native app.</li>
+        <li>PWAs download quickly on to mobile devices or desktops. Users are not directed to the app store when looking to install PWAs.</li>
+        <li>Unlike native apps, PWAs are hosted on the web server. This mean that storage space on mobile devices or desktops is small. On average around 2MB of space is used.</li>
+        <li>The use of push notifications are a vital part of the native application. Thanks to the use of Service Workers PWAs can push notifications as well.</li>
+        
+        <p>THE CON'S</p>
+        <li>The benefit of PWAs do not need to rely on the app stores for downloads is not as great as it sounds. It provides for quick downloads, however the app store is where many users go to search for apps. Thus, it misses out on user traffic.</li>
+        <li>PWAs work just as native app do, but they are not native apps, and so some restrictions do exist. There are feature that can be accessed by native apps that cannot be accessed by PWAs. Features such as, Bluetooth, proximity sensors, advanced camera controls, geofencing, contacts and many more.</li>
+        <li>PWAs may be a combination of native apps and web apps but this combinations comes with a cost to the battery. PWAs use more battery than most native apps. This may cause users to use a PWA only when battery life is not important.</li>
+        
+        <p>There are clear advantages and disadvantages of using PWAs, but it is clear that the advantages outweigh the disadvantages. No technology is perfect, and as users use mobile devices more often than desktops for their online activity. PWAs help bridge the gap between native apps and web apps.</p>
+        
+    </article>
+    </section>
+    
+    <section class="main-section" id="Web Sources">
+    <header>Web Sources</header>
+    <article>
+        <ol>
+            <li><a href="https://developers.google.com/web/progressive-web-apps/" target="_blank">Google's guide to building your first progressive web app  <br></a>This Google site has published a complete guide on PWAs to include the requirements need to build one.</li>
+            <li><a href="https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093" target="_blank">Seriously, though. What is a progressive web app?<br> </a>This article provides and explanation of what PWAs are to include definitions from other sources.</li>
+            <li><a href="https://www.howtogeek.com/342121/what-are-progressive-web-apps/" target="_blank">What Are Progressive Web Apps?<br> </a>This site provides information on how PWAs work, what platforms support them and what they are all about.</li>
+            <li><a href="https://www.smashingmagazine.com/2018/11/guide-pwa-progressive-web-applications/" target="_blank">An Extensive Guide To Progressive Web Applications<br> </a>This Article provides information on PWAs and most of the important technologies that make for a great PWAs. Technologies such as, service workers, web push notifications and Indexed DB.</li>
+            <li><a href="https://medium.freecodecamp.org/progressive-web-apps-102-building-a-progressive-web-app-from-scratch-397b72168040" target="_blank">Progressive Web Apps 102: Building a Progressive Web App from scratch<br> </a>Provides information on PWAs and how to build one in a few steps.</li>
+        </ol>
+    </article>
+    </section>
+    
+  <section class="main-section" id="Implementation">
+      <header>Implementation</header>
+      <article>
+        <p>To implement the code required to build a PWA one should have an understanding of JavaScript, CSS, HTML, and JSON files. You should also be able to create, move, and keep track of multiple files.</p>
+          <p>Start with and index HTML file.            
+          <xmp>
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                <meta charset="UTF-8">
+                <title>Page Title!</title>
+                <link rel="stylesheet" href="/styles.css">
+                </head>
+                <body>
+                    <header>
+                    <h1 class="center">Heading</h1>
+                    </header>
+                    <main>
+                    <div class="container"></div>
+                    </main>
+                    <script src="app.js"></script>
+                </body>
+                </html>
+              </xmp>
+              
+        <p>The above code has a link to styles.css this takes into account the fact that you have created an external style sheet. If this is not the case then the link should be removed.</p>
+      
+        <p>Next add the ability to fetch by adding the following to your initial HTML file.</p>
+          <xmp>
+              <script>
+                async function fetch() {
+                const res = await fetch(`https://`);
+                const json = await res.json();
+
+                main.innerHTML = json.data.map().join('\n');
+                }
+              </script>
+          </xmp>
+          <p>You can create your own Manifest.json file using a code similar to the following manifest;</p>
+          <xmp>
+              {
+                "name": "Name",
+                "short_name": "Name",
+                "icons": [{
+                    "src": "images.png",
+                    "sizes": "128x128",
+                    "type": "image/png"
+                }],
+                "start_url": "/index.html",
+                "display": "standalone",
+                "background_color": "#3E4EB8",
+                "theme_color": "#2F3BA2"
+              }
+          </xmp>
+          <p>There also exist manifest generators that can make this process easier. You just have to fill in the blanks.<a href="https://app-manifest.firebaseapp.com/" target="_blank"> Web App Manifest Generator </a>  which will appear as such;</p>
+          <img src="https://cdn-media-1.freecodecamp.org/images/1*EeVAMTLF9yowvPPJuOHpqw.png" alt="Image of Web App Manifest Generator">
+          <p>Now you'll have to create a service worker, this is done using JavaScript here is an example of a service worker that could be used after updating the required information so as it fits your PWA. This example is for a PWA on meme's.</p>
+          <xmp>
+              const staticAssets = [
+    './',
+    './styles.css',
+    './app.js'
+];
+
+self.addEventListener('install', async event => {
+    const cache = await caches.open('static-meme');
+    cache.addAll(staticAssets);
+});
+
+self.addEventListener('fetch', event => {
+    const {request} = event;
+    const url = new URL(request.url);
+    if(url.origin === location.origin) {
+        event.respondWith(cacheData(request));
+    } else {
+        event.respondWith(networkFirst(request));
+    }
+
+});
+
+async function cacheData(request) {
+    const cachedResponse = await caches.match(request);
+    return cachedResponse || fetch(request);
+}
+
+async function networkFirst(request) {
+    const cache = await caches.open('dynamic-meme');
+
+    try {
+        const response = await fetch(request);
+        cache.put(request, response.clone());
+        return response;
+    } catch (error){
+        return await cache.match(request);
+
+    }
+
+}
+          </xmp>
+          <p>This service worker will help us cache data and fetch resources. You will have to register this service worker in your HTML file. Here is an example of code you can use to do just that.</p>
+          <xmp>
+<script>
+window.addEventListener('load', async e => {
+    await fetchTrending();
+
+    if ('serviceWorker' in navigator) {
+        try {
+            navigator.serviceWorker.register('serviceWorker.js');
+            console.log('SW registered');
+
+        } catch (error) {
+            console.log('SW failed');
+
+        }
+    }
+});
+</script>
+          </xmp>
+          <p>Under Elements you will have to adjust the service worker in Application such as this image.</p>
+          <img src="https://cdn-media-1.freecodecamp.org/images/1*ayDNoz8Aw59BlVTfhrSU-w.png" alt="Image of Application tab found in the elements of the page">
+   </article>
+    </section>
+    
+  <section class="main-section" id="Useful tips">
+    <header>Useful tips</header>
+      <article>
+        <p>When implementing a PWA it is best to use a compiler such as Brackets, Visual Studio, or Atom, before attempting to build on CodePen. It is easier to track your files and to implement images. Furthermore, understanding how to use and implement fetch will be important in avoiding errors in your program. </p>
+    </article>
+    </section>
+  
+</main>
+ 
+</body>
+
+</html>
